@@ -7,12 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "justA",
+				"name": "left",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "bytes1",
 						"name": "",
-						"type": "uint256"
+						"type": "bytes1"
 					}
 				],
 				"stateMutability": "view",
@@ -20,28 +20,15 @@
 			},
 			{
 				"inputs": [],
-				"name": "postPlus",
+				"name": "right",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "bytes1",
 						"name": "",
-						"type": "uint256"
+						"type": "bytes1"
 					}
 				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "prePlus",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -58,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Textbook/Chapter2/example2.6.sol": "Ex2_6"
+			"Textbook/Chapter2/shift_operator.sol": "Ex2_10"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -72,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Textbook/Chapter2/example2.6.sol": {
-			"keccak256": "0x97ea328d8dcd9d533f0616f2484a24286a0f7476061ecf998036efa0e5747874",
+		"Textbook/Chapter2/shift_operator.sol": {
+			"keccak256": "0x031d56d58a91a69a76ffdc4ee770b8e06cad4d17b83efd8c1355c0c92eb91ee4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://83e7fc2ad64b685caabd84949b7fbf84944e92b92a540e1f73676847ad8a3d9b",
-				"dweb:/ipfs/Qmej9sNgXgbK2uP8LT3A9xSLLLWGKA6JHYJLefpMVj74Hc"
+				"bzz-raw://3d481d5e122712cbeb9085941ae6fbe6e6409e10ec8245e8ba57c4b68b162143",
+				"dweb:/ipfs/QmSaDWTCTbXaAfyVuXvvEsuVmHDbkjGaCqVWef7qCE2JTK"
 			]
 		}
 	},

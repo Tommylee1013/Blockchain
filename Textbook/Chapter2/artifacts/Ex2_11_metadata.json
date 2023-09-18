@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "bitwise",
+				"outputs": [
+					{
+						"internalType": "bytes1",
+						"name": "",
+						"type": "bytes1"
+					},
+					{
+						"internalType": "bytes1",
+						"name": "",
+						"type": "bytes1"
+					},
+					{
+						"internalType": "bytes1",
+						"name": "",
+						"type": "bytes1"
+					},
+					{
+						"internalType": "bytes1",
+						"name": "",
+						"type": "bytes1"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter2/bit_operator.sol": "Ex2_11"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter2/bit_operator.sol": {
+			"keccak256": "0x32717d6bd47c8b6a64c472f7920a2a9d445ab28e17505791b2d9a2e501d5755a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2893cb6ce47d7c05261880892daa9198bc065675d073fc57dfb2c2568922f577",
+				"dweb:/ipfs/QmXgQXQhbGb2Rp4VZyawETg95Ws4zYhT716UfnVR4fPGBU"
+			]
+		}
+	},
+	"version": 1
+}

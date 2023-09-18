@@ -9,4 +9,7 @@ contract Ex2_6 {
     function prePlus() public returns(uint){
         return ++a; // a += 1
     }
+    function postPlus() public returns(uint){
+        return a++; // a = a+1
+    }
 }
