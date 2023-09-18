@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "justA",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "prePlus",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter2/example2.6.sol": "Ex2_6"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter2/example2.6.sol": {
+			"keccak256": "0xa03fe9f153c2738c1ce7a4c1bf2a85560c6ddf9108afbe6721989115f8ec2bfa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://53bcab3c47447974241ac66b79293eed8c558e619eca259e3e6aca409e2a25c9",
+				"dweb:/ipfs/QmURYT1d5YfKRq2ib24LGH8KeeTRDtLT58VfFoG7LK1xsF"
+			]
+		}
+	},
+	"version": 1
+}
