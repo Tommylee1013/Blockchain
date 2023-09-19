@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "a",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "myFun",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter3/func_with_param.sol": "Ex3_3"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter3/func_with_param.sol": {
+			"keccak256": "0xe443b27ddc55fd469427701fe9fb25ce2b20e0c63a115ef35100169ceeb7aa9b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dc0098f432fabc828ada9d99dec95e8b5e94a59e84e0141dedcebb03030296bb",
+				"dweb:/ipfs/Qme4z6qMGYE7jKSW4vi9TipwNWaBBHPKJZxFHtbrW7tA2C"
+			]
+		}
+	},
+	"version": 1
+}
