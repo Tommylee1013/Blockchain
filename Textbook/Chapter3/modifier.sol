@@ -1,0 +1,12 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract Ex3_10 {
+
+    function myFun(uint a)
+        public 
+        pure 
+        returns(uint) {
+            return a;
+        }
+}

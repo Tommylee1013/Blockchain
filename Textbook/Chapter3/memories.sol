@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract Ex3_15 {
+
+    function myFun(string memory str) 
+        public 
+        pure 
+        returns(
+            uint,
+            string memory,
+            bytes memory
+        ) {
+            uint num = 99;
+            bytes memory byt = hex"01";
+            return(
+                num,
+                str,
+                byt
+            );
+        }
+}
