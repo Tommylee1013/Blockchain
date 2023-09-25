@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "myFun",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "weight",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Lecture Note/week04/func_returns2.sol": "Ex4_4"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Lecture Note/week04/func_returns2.sol": {
+			"keccak256": "0x707e75978a1ff7dd623ddfdedbbf632744e5ae151405a2a7b82e04e837beb7b2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ed266eb5a127c3927da5bacd8234775ac45255221297e35c1c31cbf3e95e2aaf",
+				"dweb:/ipfs/QmRceixfsurjvP8ivqhWfGMG8YvaHmi4Jqos5WFz3xkfdQ"
+			]
+		}
+	},
+	"version": 1
+}

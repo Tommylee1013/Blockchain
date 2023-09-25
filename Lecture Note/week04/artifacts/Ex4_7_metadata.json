@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "arithmetic",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Lecture Note/week04/operators.sol": "Ex4_7"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Lecture Note/week04/operators.sol": {
+			"keccak256": "0xd998196f6a88ecb03512bd5ee3263e4b29e4bde8fe3bc25ffc8f43ea6955609f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://468de8ef8658cb63167b859f6814a99bcee55f6ed835304fb6bb473bb3c79214",
+				"dweb:/ipfs/QmaT59Qh8MEFGycCBo9UkAbcKA9CRW1GTDGDCNwpKuB1jD"
+			]
+		}
+	},
+	"version": 1
+}

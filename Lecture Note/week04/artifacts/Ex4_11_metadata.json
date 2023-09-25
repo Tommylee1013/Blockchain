@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "comparison",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Lecture Note/week04/comparison.sol": "Ex4_11"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Lecture Note/week04/comparison.sol": {
+			"keccak256": "0x0851b7c45637294c758990fcd146aa7b4820dc9deb727f84a5f4d9a53af4128d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://72f98edc4557c3fa56e2db9a3429f8dbd15f6f445a411a05ca92b840387eca7c",
+				"dweb:/ipfs/QmXGLTVnVm8mb1gyS96AHcgZuohRhU9AK73d7yBbZBKVhi"
+			]
+		}
+	},
+	"version": 1
+}
