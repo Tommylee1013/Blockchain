@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "funExt",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "outPutPri",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Lecture Note/week04/view2.sol": "Ex4_22"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Lecture Note/week04/view2.sol": {
+			"keccak256": "0x55b250fdcca4c6759d0f3cfce9ec3a2c62c95c7afbe48ba37c6dee45d85e7bb4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1b4e444fefddf0c71f18d3ed489d37c3cf264829f30974861bdb5c99b0d444d6",
+				"dweb:/ipfs/QmYTd4uVSixPu9dLLbzRKy4TUYvVGbydmv93NZuPG14Rb9"
+			]
+		}
+	},
+	"version": 1
+}

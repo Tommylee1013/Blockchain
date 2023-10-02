@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "fun2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Lecture Note/week04/do_while_loop.sol": "Ex4_31"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Lecture Note/week04/do_while_loop.sol": {
+			"keccak256": "0xd82c15a39c2e1eb9b78259ca2c9abe1e1a25b165ffa2655f63678388187cb053",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a5985ab5ea7ad3311110c6dcae20e8e129559ab2a4f7260029222ca6c6a67826",
+				"dweb:/ipfs/QmZZ9mWo4NmrLfsnbgGQ6AidDmrRuL2r8rWFqxu7katSr6"
+			]
+		}
+	},
+	"version": 1
+}

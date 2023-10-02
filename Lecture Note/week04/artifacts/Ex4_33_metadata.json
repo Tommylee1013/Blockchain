@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "fun1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Lecture Note/week04/nested_loop.sol": "Ex4_33"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Lecture Note/week04/nested_loop.sol": {
+			"keccak256": "0x98e1344bd0ccf88d9f48687b265389a75ed40029c2a7e184dd914fe32060f043",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d49898f65c6ac638e9832c701443650bee953c2355a48d723f53833566879473",
+				"dweb:/ipfs/Qmd7fzxbnLcyf72CctbYrHnnEepewZcSZ5mt31osF4UYDA"
+			]
+		}
+	},
+	"version": 1
+}
