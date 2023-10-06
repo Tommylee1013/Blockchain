@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "num2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Lecture Note/week05/immutable.sol": "Ex5_12"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Lecture Note/week05/immutable.sol": {
+			"keccak256": "0xc13a825060a6b803936620ff1fbe5a75a65d36fb889cfe0a37b0e3378afd1a13",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a414eb1e424d89dc24357ae8b2b466af5c2e101dec77d5a1149b36947c214640",
+				"dweb:/ipfs/QmY7QfJdxFXUYPV6avnPBpaUsWMKn5Gq2PBe3sGztCzBoy"
+			]
+		}
+	},
+	"version": 1
+}

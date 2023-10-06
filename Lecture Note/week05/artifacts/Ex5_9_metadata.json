@@ -146,7 +146,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Lecture Note/week05/exampleStruct.sol": "Ex5_9"
+			"Lecture Note/week05/structWithArray.sol": "Ex5_9"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -160,12 +160,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Lecture Note/week05/exampleStruct.sol": {
-			"keccak256": "0x1410242a7a1825cf202e7f93f205b9c9901320d0a43b31b78e793e85963a4152",
+		"Lecture Note/week05/structWithArray.sol": {
+			"keccak256": "0xa7bb4c88b4b5b9398cef4b13c6713e72f2d0232ed74765cd7591acd52099d7f4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8ee7dc7715e26f6e66d9dcca526832453ea220253fdf9e5c5bde2f0b07f319c1",
-				"dweb:/ipfs/QmUvfBR2jUeGrqP7sguAG81fo2X2HK14oNmHuVWp4UxKFr"
+				"bzz-raw://24e7e7eb6df6cfd625bf576f8d94c37de752987a1d24df516587ec9418acc893",
+				"dweb:/ipfs/QmNP7dUy9Jdi5pwyg1Wn6kcXVVNcquymED3pS7MkCjp2u5"
 			]
 		}
 	},
