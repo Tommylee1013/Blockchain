@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "funExt",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "outPutExt",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter3/callExternal.sol": "Ex3_20"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter3/callExternal.sol": {
+			"keccak256": "0x36139f62c74221f92dd0adb5cd909df83f89de493eaa03df58e4d484f1c6411b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dc7ceeefcac56705c48a481d0ba5bdb18ba0c6adbb4f254fbf5bf60e9bfe01ac",
+				"dweb:/ipfs/QmQHZjbtZq6eMKKbve1h1wpV55J9RdEM9WT8LMCJhupq3J"
+			]
+		}
+	},
+	"version": 1
+}

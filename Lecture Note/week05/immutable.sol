@@ -11,7 +11,7 @@ contract Ex5_12 {
         num2 = _num;
     }
 
-    /*
+    /* 
     function change() 
         public
         pure
