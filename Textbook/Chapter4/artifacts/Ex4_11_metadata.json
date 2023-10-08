@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "fun1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter4/nestedLoop.sol": "Ex4_11"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter4/nestedLoop.sol": {
+			"keccak256": "0xf7f27eac1ca465f51afc80dac92ef47d9b21f39ebf175c47dc94f3c1877c6fa4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9ffe82bae65fd3ad6f15287ff3dbb28535b89edd662065a6dd738eaa01bb71f5",
+				"dweb:/ipfs/QmPqB946kTkb3aL46HcifwwJnQjefvTGPbQuGD2XvBi1rv"
+			]
+		}
+	},
+	"version": 1
+}

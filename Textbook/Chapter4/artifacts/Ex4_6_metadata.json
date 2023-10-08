@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "fun1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter4/forLoop.sol": "Ex4_6"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter4/forLoop.sol": {
+			"keccak256": "0xcb217b0c0e79091ea10a8d1202040c30dea79b2e8c42fecc141ba70bda711595",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1d611aace5321771029ba352cae1ef9ae0c274af572e9fc0592f635a7621be8b",
+				"dweb:/ipfs/QmZQ29C2idsQBuQgEhbGB6Dv5tvhq4jceAGAxN1wqWAiXv"
+			]
+		}
+	},
+	"version": 1
+}

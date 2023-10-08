@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					}
+				],
+				"name": "fun1",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter4/example1.sol": "quiz1"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter4/example1.sol": {
+			"keccak256": "0xc99544fb383655ecaf0d39701df9c30872beb40760edaf3b764103060e865f7d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://267c1d6c1357da9d1a802e5774350aaae52ceae94ed8e4fb14aef69c692200ba",
+				"dweb:/ipfs/QmYUqaKfViY2tiFJoMU1PTTjpz9jWjBEW9BsykEy9TK5Ns"
+			]
+		}
+	},
+	"version": 1
+}
