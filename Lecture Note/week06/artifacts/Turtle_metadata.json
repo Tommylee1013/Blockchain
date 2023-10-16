@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Lecture Note/week06/Polymorphism.sol": "Turtle"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Lecture Note/week06/Polymorphism.sol": {
+			"keccak256": "0xbb3c5f9fa62ef7dc30feaad254647fa282a66a0cda08a6f123007637e5941147",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3061e5658a22ff7bb254463f3c6e26bf420d4e21919e7d7a6d8f222f4f2a7e26",
+				"dweb:/ipfs/QmbWxn5Xb62VYbcwhMG5cYa4R3sn37zJ8KMmfCFAg3t421"
+			]
+		}
+	},
+	"version": 1
+}
