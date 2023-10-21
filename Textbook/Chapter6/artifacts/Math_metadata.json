@@ -6,39 +6,43 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "boot",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num2",
+						"type": "uint256"
+					}
+				],
+				"name": "add",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num1",
+						"type": "uint256"
 					},
 					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
+						"internalType": "uint256",
+						"name": "num2",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "errorCheck",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "versionCheck",
+				"name": "mul",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -63,7 +67,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Textbook/Chapter6/interfaceInteraction.sol": "Computer"
+			"Textbook/Chapter6/quiz4.sol": "Math"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -77,12 +81,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Textbook/Chapter6/interfaceInteraction.sol": {
-			"keccak256": "0x0fe6f3877ff4bbfec594f15dab4a6c59b37364230008b68e37c4bc4c11c13d9c",
+		"Textbook/Chapter6/quiz4.sol": {
+			"keccak256": "0x78c4bc186c5d484bc6e525c33a6e507d9fed1655bbf220ec34c0d5c0f193f5fd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://695e8276c28667b24450cb161577bf1c4c32715558b3f7b4353b1a6fe3ae34a8",
-				"dweb:/ipfs/QmSyLkD7devb5bTc6kyEXhARgeHWECYR19SAUeZiu3fh5j"
+				"bzz-raw://38595dc7c27874f8b9b8f4d49e52e180cf6f0963ccbd990822f3d16ca1c7ebae",
+				"dweb:/ipfs/QmXQ9JfNNssSCCh9kRcw4RkNga7TAj2wpV7jooExVNCny9"
 			]
 		}
 	},

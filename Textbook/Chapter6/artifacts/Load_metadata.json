@@ -6,7 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
 				"name": "boot",
 				"outputs": [
 					{
@@ -20,11 +26,17 @@
 						"type": "bool"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
 				"name": "errorCheck",
 				"outputs": [
 					{
@@ -33,11 +45,17 @@
 						"type": "bool"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
 				"name": "versionCheck",
 				"outputs": [
 					{
@@ -46,7 +64,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -63,7 +81,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Textbook/Chapter6/interfaceInteraction.sol": "Computer"
+			"Textbook/Chapter6/interfaceInteraction.sol": "Load"
 		},
 		"evmVersion": "paris",
 		"libraries": {},

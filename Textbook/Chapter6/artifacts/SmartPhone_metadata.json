@@ -63,7 +63,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Textbook/Chapter6/interfaceInteraction.sol": "Computer"
+			"Textbook/Chapter6/interface.sol": "SmartPhone"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -77,12 +77,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Textbook/Chapter6/interfaceInteraction.sol": {
-			"keccak256": "0x0fe6f3877ff4bbfec594f15dab4a6c59b37364230008b68e37c4bc4c11c13d9c",
+		"Textbook/Chapter6/interface.sol": {
+			"keccak256": "0xc0d56356a8e1b98ca24cf964364b1fbd2abdc94dcdb467790f4e4663d4433c7a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://695e8276c28667b24450cb161577bf1c4c32715558b3f7b4353b1a6fe3ae34a8",
-				"dweb:/ipfs/QmSyLkD7devb5bTc6kyEXhARgeHWECYR19SAUeZiu3fh5j"
+				"bzz-raw://f1f44ed1c4f3fa3d43d78b37fc83f46e2a3e79419ade789085cfa327cecb2470",
+				"dweb:/ipfs/QmeJLBvjnGsM6wSFfczqdQei8zhxZGzRiFBsrMrwFaHVAF"
 			]
 		}
 	},

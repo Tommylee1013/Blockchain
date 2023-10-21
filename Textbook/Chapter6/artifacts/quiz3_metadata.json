@@ -32,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Textbook/Chapter6/quiz3.sol": "Student"
+			"Textbook/Chapter6/quiz3.sol": "quiz3"
 		},
 		"evmVersion": "paris",
 		"libraries": {},

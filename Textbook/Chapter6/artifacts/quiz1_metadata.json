@@ -6,47 +6,53 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "boot",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "value",
 						"type": "uint256"
-					},
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
 					}
 				],
-				"stateMutability": "pure",
-				"type": "function"
+				"stateMutability": "nonpayable",
+				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "errorCheck",
-				"outputs": [
+				"anonymous": false,
+				"inputs": [
 					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "versionCheck",
-				"outputs": [
-					{
+						"indexed": false,
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"name": "Info",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "changeNum",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "num",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -63,7 +69,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Textbook/Chapter6/interfaceInteraction.sol": "Computer"
+			"Textbook/Chapter6/quiz1.sol": "quiz1"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -77,12 +83,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Textbook/Chapter6/interfaceInteraction.sol": {
-			"keccak256": "0x0fe6f3877ff4bbfec594f15dab4a6c59b37364230008b68e37c4bc4c11c13d9c",
+		"Textbook/Chapter6/quiz1.sol": {
+			"keccak256": "0x0c000135f6f0490cdc9fb84c3260a91b1e9ebdfc6f6a1acfbd6bc99fed02ce12",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://695e8276c28667b24450cb161577bf1c4c32715558b3f7b4353b1a6fe3ae34a8",
-				"dweb:/ipfs/QmSyLkD7devb5bTc6kyEXhARgeHWECYR19SAUeZiu3fh5j"
+				"bzz-raw://059275dbbb16190fa6ad69bcb3190f2519f8204858fa54211df6fa49bd4d56d0",
+				"dweb:/ipfs/QmXGtAjaxW2EfSNJhFyCGJKFwTtWmWb161ejPoGWCUa8JY"
 			]
 		}
 	},

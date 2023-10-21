@@ -6,39 +6,33 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "boot",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "runRequire",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					},
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
 					}
 				],
 				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "errorCheck",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "versionCheck",
+				"name": "runRevert",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -63,7 +57,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Textbook/Chapter6/interfaceInteraction.sol": "Computer"
+			"Textbook/Chapter7/Ex7_2.sol": "Ex7_2"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -77,12 +71,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Textbook/Chapter6/interfaceInteraction.sol": {
-			"keccak256": "0x0fe6f3877ff4bbfec594f15dab4a6c59b37364230008b68e37c4bc4c11c13d9c",
+		"Textbook/Chapter7/Ex7_2.sol": {
+			"keccak256": "0x060a81613e3f147fba26f4028b218f4fd936675018896d141c839295ed0fac0c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://695e8276c28667b24450cb161577bf1c4c32715558b3f7b4353b1a6fe3ae34a8",
-				"dweb:/ipfs/QmSyLkD7devb5bTc6kyEXhARgeHWECYR19SAUeZiu3fh5j"
+				"bzz-raw://992807cfd140b84fb582861ad24cb3411fe21e8c30a5e0a371a0bc26a16f7629",
+				"dweb:/ipfs/QmQYVN9ksPdu3PBEyGXnU7Gt96gDeTJ5FfKHfzJcC8AL4N"
 			]
 		}
 	},

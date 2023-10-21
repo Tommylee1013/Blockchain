@@ -6,13 +6,24 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "university",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num2",
+						"type": "uint256"
+					}
+				],
+				"name": "division",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "pure",
@@ -32,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Textbook/Chapter6/quiz3.sol": "Student"
+			"Textbook/Chapter7/Ex7_5.sol": "Math"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -46,12 +57,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Textbook/Chapter6/quiz3.sol": {
-			"keccak256": "0xe4ea07c51e0ccb5abe7de72c9193474c087e74280a86112a0c19fc131c12d66e",
+		"Textbook/Chapter7/Ex7_5.sol": {
+			"keccak256": "0x95ff221074145e4893d4766e041ff1e4b70cb4766ad3f176929dc9ada3a249d9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://11bf0f30ddfc348b1b4b0bbf224a78a486673e116bc15e775860fcf1b6dcd5f1",
-				"dweb:/ipfs/QmYKTPtuti9aFndJFQXRjJnsXzNJ2VY9VQefxkhZFgFhKh"
+				"bzz-raw://1ed5b17b35400298d476589faf869638313047194290ed29a9cb91c42d099544",
+				"dweb:/ipfs/QmPrzCbE9WQ9QdQTKLvSAWiqafV8Dd8p8XqLoCHk3MsAhx"
 			]
 		}
 	},

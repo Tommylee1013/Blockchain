@@ -7,38 +7,23 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "boot",
-				"outputs": [
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "n1",
 						"type": "uint256"
 					},
 					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
+						"internalType": "uint256",
+						"name": "n2",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "errorCheck",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "versionCheck",
+				"name": "addNumvers",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -46,7 +31,20 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "math",
+				"outputs": [
+					{
+						"internalType": "contract Math",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -63,7 +61,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Textbook/Chapter6/interfaceInteraction.sol": "Computer"
+			"Textbook/Chapter6/quiz2.sol": "quiz2"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -77,12 +75,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Textbook/Chapter6/interfaceInteraction.sol": {
-			"keccak256": "0x0fe6f3877ff4bbfec594f15dab4a6c59b37364230008b68e37c4bc4c11c13d9c",
+		"Textbook/Chapter6/quiz2.sol": {
+			"keccak256": "0x239fd6328faec109ed19c1f0b60eb3944d8847bf33bd81811124c1a6935e4d4b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://695e8276c28667b24450cb161577bf1c4c32715558b3f7b4353b1a6fe3ae34a8",
-				"dweb:/ipfs/QmSyLkD7devb5bTc6kyEXhARgeHWECYR19SAUeZiu3fh5j"
+				"bzz-raw://8efa8216cc768da115d075ee5b76d934dd88d2536f469d008f4899f10577ad1c",
+				"dweb:/ipfs/QmQ489nx7rxpoJBWXZQSrMP35h28LD697E1MFPewMyrQyE"
 			]
 		}
 	},
