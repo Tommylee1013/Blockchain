@@ -1,0 +1,51 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract Animal {
+    function getName() 
+        public 
+        pure 
+        virtual 
+        returns(string memory) {
+            return "Animal";
+        }
+}
+
+contract Tiger is Animal {
+    function getName()
+        public 
+        pure 
+        override 
+        returns(string memory) {
+            return "Tiger";
+        }
+}
+
+contract Turtle is Animal {
+    function getName()
+        public 
+        pure 
+        override 
+        returns(string memory){
+            return "Turtle";
+        }
+}
+
+contract AnimalSet {
+    Animal public tiger = new Tiger();
+    Animal public turtle = new Turtle();
+
+    function getAllNames()
+        public 
+        view 
+        returns(string memory, string memory) {
+            return (tiger.getName(), turtle.getName());
+        }
+    
+    function whatIsTheName(Animal value) 
+        public 
+        pure 
+        returns(string memory) {
+            return (value.getName());
+        }
+}

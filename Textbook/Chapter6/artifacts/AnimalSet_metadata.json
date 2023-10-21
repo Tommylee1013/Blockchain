@@ -1,0 +1,109 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getAllNames",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tiger",
+				"outputs": [
+					{
+						"internalType": "contract Animal",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "turtle",
+				"outputs": [
+					{
+						"internalType": "contract Animal",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract Animal",
+						"name": "value",
+						"type": "address"
+					}
+				],
+				"name": "whatIsTheName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter6/polymorphism.sol": "AnimalSet"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter6/polymorphism.sol": {
+			"keccak256": "0x3dfcc427e86240fce17314ab38c1f30ffd0917e4843ef9dc8793828f49658acb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://674b71b96f93b16443ae4e8383bf869ca97f2bb55ec4943eb3513895b2de73b3",
+				"dweb:/ipfs/QmTWnUiBD83nMc8Q8sE3QTjFW4NsYLoZZBd6hgqiFRyrYn"
+			]
+		}
+	},
+	"version": 1
+}

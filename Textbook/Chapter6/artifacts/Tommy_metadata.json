@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "time",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter6/inheritanceOrder.sol": "Tommy"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter6/inheritanceOrder.sol": {
+			"keccak256": "0xd8551e14fa8748fcabf524cedba1e89aded925506097923e1a1ac78d5d79b804",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2b0b6b54766d6c0ba5bd817dd5996da673d12a0a683ba032b011284c182ca3ee",
+				"dweb:/ipfs/QmXJNA2vTqtsbUgonuTdmB2rAV3A3PNHC1ssrVPeoShZKb"
+			]
+		}
+	},
+	"version": 1
+}

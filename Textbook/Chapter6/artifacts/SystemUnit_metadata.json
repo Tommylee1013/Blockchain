@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "turnOn",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter6/instance.sol": "SystemUnit"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter6/instance.sol": {
+			"keccak256": "0x93246587fc3d2c606f16a718fa91245b6c77013c4abc7a4a5348226fce936a75",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cfc108e228f63b01eb2fa6df55e9ce4e9878d844f004dc15fe3573b171fc0633",
+				"dweb:/ipfs/QmeYBdjSdAC4dp57XUAC2GJExtASWWLrpMTKJGnRY5XrRd"
+			]
+		}
+	},
+	"version": 1
+}

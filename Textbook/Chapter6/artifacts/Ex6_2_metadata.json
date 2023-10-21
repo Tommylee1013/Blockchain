@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "num",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter6/constructor.sol": "Ex6_2"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter6/constructor.sol": {
+			"keccak256": "0xf29efcf15f6e8733cdfa8088f33a0ecae973091de14d6b4735b71fccbb71bbc5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b848df19f7dd811a9333f6fdf391e446c53c4364ae6d72b1a90cb10c9a089a43",
+				"dweb:/ipfs/QmWZxSMphukwnzhQaUoX8pmijydgv1j2npezcHeYgWN3Ux"
+			]
+		}
+	},
+	"version": 1
+}

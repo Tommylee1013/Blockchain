@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "changeNumber",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter6/encapsulation.sol": "Caller"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter6/encapsulation.sol": {
+			"keccak256": "0x6c97756e9757ae37bd6c2585bab120a14113f1efb952379c78a8b301a69854dd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7ef493ec010e4280479fb6dc77a64f588892c053d0d2b648b0e1f48259dfcc89",
+				"dweb:/ipfs/QmVYQq6m7wG7Va8s5sz5UsicJBB7vckwsSLFK1zjnhnSCm"
+			]
+		}
+	},
+	"version": 1
+}
