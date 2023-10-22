@@ -4,7 +4,32 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num2",
+						"type": "uint256"
+					}
+				],
+				"name": "substraction",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -18,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Textbook/Chapter8/quiz4.sol": "Math"
+			"Textbook/Chapter8/quiz4.sol": "quiz4"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},

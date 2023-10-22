@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"name": "value",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter8/quiz1.sol": "quiz1"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter8/quiz1.sol": {
+			"keccak256": "0xaa5fee7db673faf3f96c0c7142d3285581bbd4b1e0c3e53a74562b589ff51709",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3965436a63727bf4469785a32900e8cbd0b478c4b81f39b2dc25b58b36065a2e",
+				"dweb:/ipfs/QmYnyMQJTAXUtfAsnMkNVrXZEGZZcR9DyAtUd4kVLjD5ug"
+			]
+		}
+	},
+	"version": 1
+}

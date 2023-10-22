@@ -8,8 +8,8 @@ contract Ex9_2 {
         _;
     }
 
-    constructor() {
-        owner = msg.sender;
+    constructor() { //constructor를 통해 owner를 미리 지정할 수 있다
+        owner = msg.sender; // 보낸 사람 정보
     }
 
     function getBalance(address _addr) 
@@ -17,7 +17,7 @@ contract Ex9_2 {
         view 
         onlyOwner()
         returns(uint) {
-            return _addr.balance;
+            return _addr.balance; // 주소의 잔액을 볼 수 있음
         }
     
     function getMsgValue()

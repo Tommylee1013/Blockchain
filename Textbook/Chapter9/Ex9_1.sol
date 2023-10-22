@@ -6,13 +6,13 @@ contract Ex9_1 {
         public 
         view 
         returns(uint) {
-            return _address.balance;
+            return _address.balance; // 잔액을 보는 내장함수. address 자료형은 기본적으로 다 가지고 있다
         }
     
     function getMsgValue()
         public 
         payable 
         returns(uint) {
-            return msg.value;
+            return msg.value; // 보낸 금액을 볼 수 있다
         }
 }
