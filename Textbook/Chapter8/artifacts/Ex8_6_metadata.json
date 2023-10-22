@@ -1,0 +1,118 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "int1",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "int2",
+						"type": "uint8"
+					}
+				],
+				"name": "noOverflow1",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "int1",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "int2",
+						"type": "uint8"
+					}
+				],
+				"name": "noOverflow2",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "int1",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "int2",
+						"type": "uint8"
+					}
+				],
+				"name": "overflow",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter8/Ex8_6.sol": "Ex8_6"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter8/Ex8_6.sol": {
+			"keccak256": "0x678fc669516140183d0ec6181d70ff016833d1cc9439868690d782fdac4f8a10",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2831f1128f7476b14af639b762c96aac811009638c1db02f29ac542073aac9e5",
+				"dweb:/ipfs/QmbshPaPAgkpMeD6fekcKpRFJT9HzNBqHhGiceoFVofjWY"
+			]
+		}
+	},
+	"version": 1
+}

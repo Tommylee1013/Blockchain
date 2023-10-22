@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"name": "revertFunction",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter7/quiz1.sol": "quiz1"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter7/quiz1.sol": {
+			"keccak256": "0x173cf5be28ee29ce06b82f6b27ffeace8e560358a16be238c58ead061207a997",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://23245902131b6ce92e853fde97740f847d163d2a6ef9825ba97dfb1e923992ac",
+				"dweb:/ipfs/QmeYHQkyzjkZjzJRXEXv2Fmj8WPGkfJ6RNVVx6y5LHsEbF"
+			]
+		}
+	},
+	"version": 1
+}

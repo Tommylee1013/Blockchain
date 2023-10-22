@@ -1,0 +1,105 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "info",
+						"type": "string"
+					}
+				],
+				"name": "Information",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "deliveryFood",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "foodStatus",
+				"outputs": [
+					{
+						"internalType": "enum Ex8_3.FoodProcess",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "orderFood",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "paymentFood",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "takeAwayFood",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter8/Ex8_3.sol": "Ex8_3"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter8/Ex8_3.sol": {
+			"keccak256": "0x2ca78e2560497965b188cf27b6288648feef5c9844e3560d5927c82a30e83832",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4404a46a5e72094eb448789d96ed513387c999be6c5bbac163ed36d5736ec97f",
+				"dweb:/ipfs/QmYR1eRfuwzjxBVhMpWZHfb77LDWSmpRHLmoWW9c6CvBsU"
+			]
+		}
+	},
+	"version": 1
+}

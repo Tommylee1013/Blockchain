@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "arrPop",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "arrPopWithTryCatch",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter7/quiz3.sol": "quiz3"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter7/quiz3.sol": {
+			"keccak256": "0x97bc834c8e92b7dd6159ead366f9bf4fc3f64c9ac8715a4e71c70377ffb25e08",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://89e35cba0a48a317e6e2e9d6bd3683cd2c4026fbc63f94df149872edb89160ca",
+				"dweb:/ipfs/QmTmFjEJPn6rkKdThV1zorRByHJPM8BVaGyBWfTXrh83gx"
+			]
+		}
+	},
+	"version": 1
+}

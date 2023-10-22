@@ -1,0 +1,127 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "schoolHours",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "schoolName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalHours",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "workPlace",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "workingHours",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter8/Ex8_4.sol": "Tommy"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter8/Ex8_4.sol": {
+			"keccak256": "0xba129595e7a50c7652a0b3722428758bd0fb01bea24225e382a6f5cb0689c1ea",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://915323df1c11dbeb785922006f95ec66e9014d1eacfb0e0fc59b9580ce9f47fe",
+				"dweb:/ipfs/QmUuMVNi7a8dD7y4MmcKXf4RDE3fXTkgYr5mge9UxKBNZM"
+			]
+		},
+		"Textbook/Chapter8/Ex8_4_1.sol": {
+			"keccak256": "0x384e27c8fb393be52e9c43a911cfc42e66ed652930cf0c2b5fb0a8cf8ad9be75",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9509dc58c100ba659618667a1af45386b4400165367c3294a1af7d97e6784055",
+				"dweb:/ipfs/Qmdihesa7QnirVHb9CzyD1udC4HaEStTGSFqmvdKycxs6A"
+			]
+		},
+		"Textbook/Chapter8/Ex8_4_2.sol": {
+			"keccak256": "0xb791d7c2d3717f796d3ebfd4c4a1a00fa8f2b526be33ee241a6c593735dd1efb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c78a1f814118f5090d042c21abcd6b4805e04d4331331da6a491a6f74f22451f",
+				"dweb:/ipfs/QmXvc6yd63EEeLsq7D6Q5KompCE7GmNPMYqfDzH4Abz931"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "output5",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "output5WithTryCatch",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter7/quiz4.sol": "quiz4"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter7/quiz4.sol": {
+			"keccak256": "0xef40f771355bdc304c64d5be86280036d870281d0aff27a7d69efbd753bf1006",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d2f2f9f852b0343c4cd6ad7bf0fa0537c79769a3df7e33f5197ea4021933893a",
+				"dweb:/ipfs/QmQDDDNZCWH8qE8ZapixLSkzBsALDFjSfrtAkyECPM4S8q"
+			]
+		}
+	},
+	"version": 1
+}
