@@ -6,26 +6,15 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "num1",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "num2",
-						"type": "uint256"
-					}
-				],
-				"name": "add",
+				"inputs": [],
+				"name": "dec",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "returnsResult",
+				"name": "get",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -34,6 +23,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "inc",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -50,7 +46,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Lecture Note/week06/Ex6_18.sol": "Math"
+			"Lecture Note/week08/exercise01.sol": "Counter"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -64,12 +60,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Lecture Note/week06/Ex6_18.sol": {
-			"keccak256": "0x9cc2c6c785de767fadb8bd3317e1a7416fa18e83c2813a66989e91ccd050b10e",
+		"Lecture Note/week08/exercise01.sol": {
+			"keccak256": "0xb244ac3631e79c19642d31aca23004b2ed39d48a3b6bb5ebcb03ce662d53d5ad",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c735dc9c99b146ba7fe949b1e10901bba720efeff1dbf3ece54ad4254f6eea22",
-				"dweb:/ipfs/QmXRbBXSWt7mHDDtavWyGN23wNDNpEdcKeXj379kzK4g5e"
+				"bzz-raw://989fbd5f177d5bd6541725f5f8f9b6f79a9c71f0cd167e6edac87c67516f459c",
+				"dweb:/ipfs/QmUXELMBXRD6HG2wNRau7zeRW2dXeps5PsRMKk6UWjzrav"
 			]
 		}
 	},

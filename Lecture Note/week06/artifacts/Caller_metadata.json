@@ -8,32 +8,27 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "num1",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "num2",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
 					}
 				],
-				"name": "add",
+				"name": "expectFallback",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "returnsResult",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
 					}
 				],
-				"stateMutability": "view",
+				"name": "outPutWithEther",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -50,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Lecture Note/week06/Ex6_18.sol": "Math"
+			"Lecture Note/week06/Ex6_19.sol": "Caller"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -64,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Lecture Note/week06/Ex6_18.sol": {
-			"keccak256": "0x9cc2c6c785de767fadb8bd3317e1a7416fa18e83c2813a66989e91ccd050b10e",
+		"Lecture Note/week06/Ex6_19.sol": {
+			"keccak256": "0xa14083e9af7365b66b8aecb2ccc9452653c4a0f6b48b28193bcb2f024051dbae",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c735dc9c99b146ba7fe949b1e10901bba720efeff1dbf3ece54ad4254f6eea22",
-				"dweb:/ipfs/QmXRbBXSWt7mHDDtavWyGN23wNDNpEdcKeXj379kzK4g5e"
+				"bzz-raw://cc1dbf461167c92d9a5acda10fa5926df45939b8b7af6b5ec24ce05ed42aea81",
+				"dweb:/ipfs/QmbQ2qvGoNjJK9HBTGUt8CF5hhU5Y5wfL5KJ1R6fkuuneo"
 			]
 		}
 	},

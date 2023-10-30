@@ -6,26 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "num1",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "num2",
-						"type": "uint256"
-					}
-				],
-				"name": "add",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
 			},
 			{
 				"inputs": [],
-				"name": "returnsResult",
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -50,7 +37,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Lecture Note/week06/Ex6_18.sol": "Math"
+			"Lecture Note/week06/Ex6_17.sol": "Ex6_17"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -64,12 +51,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Lecture Note/week06/Ex6_18.sol": {
-			"keccak256": "0x9cc2c6c785de767fadb8bd3317e1a7416fa18e83c2813a66989e91ccd050b10e",
+		"Lecture Note/week06/Ex6_17.sol": {
+			"keccak256": "0x6a654afa654a3c994f32d7dcba8f7767d1367b3577a76511ab059e30bba8f73d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c735dc9c99b146ba7fe949b1e10901bba720efeff1dbf3ece54ad4254f6eea22",
-				"dweb:/ipfs/QmXRbBXSWt7mHDDtavWyGN23wNDNpEdcKeXj379kzK4g5e"
+				"bzz-raw://858897522f7c0400c3ffda8dc95f6b34edd6d71436cb2b9a61a20f57869acb3b",
+				"dweb:/ipfs/QmNefw63QcfweKzLQmn9WGviM4aVYETd5RrFavZ3XtH7nk"
 			]
 		}
 	},
