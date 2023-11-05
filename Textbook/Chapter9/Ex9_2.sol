@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 contract Ex9_2 {
     address public owner;
-    modifier onlyOwner() {
+    modifier onlyOwner() { // 소유자인지 아닌지를 판단하는 modifier
         require(owner == msg.sender, "Error: caller is not the owner");
         _;
     }

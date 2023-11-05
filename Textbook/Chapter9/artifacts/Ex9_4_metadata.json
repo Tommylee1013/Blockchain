@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "ethDelivery",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter9/Ex9_4.sol": "Ex9_4"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter9/Ex9_4.sol": {
+			"keccak256": "0x8330ecc79a97c284bd39a9269df4df9f21909e17c469fea6eb746752582a2750",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f3c537ce24e11b8224da9794e77338a2c0d6153a802e4df6ae7e7ad36955d1ad",
+				"dweb:/ipfs/QmWgWNHBKMhVcAmWTdPt9aPnb3TJzgcNeaafA7rmS8HkKB"
+			]
+		}
+	},
+	"version": 1
+}

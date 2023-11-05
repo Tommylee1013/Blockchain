@@ -1,0 +1,89 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Obtain",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sendEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Textbook/Chapter9/Ex9_6.sol": "Ex9_6"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Textbook/Chapter9/Ex9_6.sol": {
+			"keccak256": "0x07ceb3d0b5f4657ebd8bc013a9084291d7d2cc953f3e4b3f22ff76ce85362b3e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1aa05018235150899d0d50aab4ee7da40edd257c9b327eb225715d32727cb2b0",
+				"dweb:/ipfs/QmVrfwWS7rPrnyvKdC9gBqYsmQsKVeYci5vSvPCrhaz3JZ"
+			]
+		}
+	},
+	"version": 1
+}

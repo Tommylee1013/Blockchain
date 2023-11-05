@@ -9,7 +9,7 @@ contract Bank {
     event Withdrawal(address _address, uint _value);
 
     modifier onlyOwner() {
-        require(owner == msg.sender, "Error : caller is not the owner");
+        require(owner == msg.sender, "Error : caller is not the owner"); //sender와 owner가 다르면 Error출력
         _; // function logic
     }
 
@@ -23,11 +23,11 @@ contract Bank {
         emit Deposit(msg.sender, msg.value);
     }
 
-    function withdraw(uint _value) public {
-        require(account[msg.sender] >= _value, "Error: Insufficient balance");
-        account[msg.sender] -= _value;
-        payable(msg.sender).transfer(_value);
-        emit Withdrawal(msg.sender, _value);
+    function withdraw(uint amount) public {
+        require(account[msg.sender] >= amount, "Error: Insufficient balance");
+        account[msg.sender] -= amount;
+        payable(msg.sender).transfer(amount);
+        emit Withdrawal(msg.sender, amount);
     }
     
     function getBalance()

@@ -117,7 +117,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_value",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
@@ -155,11 +155,11 @@
 	},
 	"sources": {
 		"Lecture Note/week08/exercise02.sol": {
-			"keccak256": "0x64f3782eae3b3af81760d50818adad82f716bfe0f772875379c8a01a22a44d6d",
+			"keccak256": "0x7824693adaa14729f441ffc03bfc6b9c579950ed6e19647cb397ffde5acbf61d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d3ce3b4eddd7dc4998e3d6dcfe58a52a09012bd3b7a0bed259d6e0484acc5e02",
-				"dweb:/ipfs/QmV3ff97BzLvELZnBheVxq5ooGUVt1S5crm9RTXQvPy5bT"
+				"bzz-raw://e1ddec5ef8673b3f1ae7027971dfa13b69e19f1d04167e1054d45958db9ae792",
+				"dweb:/ipfs/QmdHhYJx5wT3BLoQohc54is4rd8xdJ5qVrLkSiHZRoKKK4"
 			]
 		}
 	},
