@@ -6,57 +6,31 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_duration",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_goalAmount",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "_address",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "_value",
-						"type": "uint256"
-					}
-				],
-				"name": "Deposit",
-				"type": "event"
+				"inputs": [],
+				"name": "checkGoalReached",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			},
 			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "_address",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "_value",
-						"type": "uint256"
-					}
-				],
-				"name": "Withdrawal",
-				"type": "event"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "account",
+				"inputs": [],
+				"name": "deadline",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -69,14 +43,27 @@
 			},
 			{
 				"inputs": [],
-				"name": "deposit",
+				"name": "ended",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fund",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "getBalance",
+				"name": "goalAmount",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -88,8 +75,32 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "investors",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "getContractBalance",
+				"name": "numInvestors",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -114,16 +125,29 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "status",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalAmount",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "withdraw",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -140,7 +164,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Lecture Note/week08/exercise02.sol": "Bank"
+			"Lecture Note/week09/CrowdFunding.sol": "CrowdFund"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -154,12 +178,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Lecture Note/week08/exercise02.sol": {
-			"keccak256": "0x679362f4fef5c31cd93e52493f42aeaab6cf7b61c2db070578cf521cd8965695",
+		"Lecture Note/week09/CrowdFunding.sol": {
+			"keccak256": "0x317b652a6a31720f1fcd8329316a49a0aae6c1caa15b443141ffa429d243d7d1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1e40e56d60a723b58b70f2644f89f166a44e6b9d22948ecd489dc362926f63a7",
-				"dweb:/ipfs/QmPWPXEjvDeRHJU3EmB5H5e74JVGeuUcjLaKfTyJnxJ1QQ"
+				"bzz-raw://4addf9cdfd0136447ce106c7f0bb4f257d1bc7339cc1e50102f27dbe59fe5091",
+				"dweb:/ipfs/QmUydpwzWHfydokv4dKXQwh6dnnbLoZngoFVtvgh2nTCMq"
 			]
 		}
 	},
