@@ -13,12 +13,12 @@
 						"type": "uint256"
 					}
 				],
-				"name": "fruitArray",
+				"name": "proposals",
 				"outputs": [
 					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "voteCount",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -27,22 +27,27 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_word",
-						"type": "string"
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
-				"name": "linearSearch",
+				"name": "voters",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "weight",
 						"type": "uint256"
 					},
 					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
+						"internalType": "bool",
+						"name": "voted",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "vote",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -62,7 +67,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Lecture Note/week05/linearSearch.sol": "Ex5_7"
+			"ballot/ballot-contract/contracts/Ballot.sol": "Ballot"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -76,12 +81,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Lecture Note/week05/linearSearch.sol": {
-			"keccak256": "0xc57abca81668226cb2d2cd955d1fafb38167754761c79e90b71222b9bb438523",
-			"license": "MIT",
+		"ballot/ballot-contract/contracts/Ballot.sol": {
+			"keccak256": "0xfb5def058ef03c6f4f8d3c47fcb49770872e72a35183de1eecd2775874ebbe26",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://465397b06bcd6187c91fe3a878fb260e57548fe41e157408ded6125a38e8e011",
-				"dweb:/ipfs/QmWRjEq3Qif1XtjYkaX13GFPQMGD4hjZndFD5Ec63X1Bow"
+				"bzz-raw://f864f705fc1e00711466d1419c267acca3a453679b73965e269444c769026e9e",
+				"dweb:/ipfs/QmSkQA9ngordLTfNiR8znSyo842j1PAj2yKHMEKqabQLiY"
 			]
 		}
 	},

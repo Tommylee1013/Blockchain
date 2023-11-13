@@ -2,6 +2,7 @@
 pragma solidity ^0.8.0;
 
 contract InfoService {
+
     struct ContractInfo {
         address contractOwner;
         address contractAddress;

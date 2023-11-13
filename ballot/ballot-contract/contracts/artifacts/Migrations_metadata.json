@@ -6,19 +6,31 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "last_completed_migration",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "fruitArray",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "address",
 						"name": "",
-						"type": "string"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -27,25 +39,14 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_word",
-						"type": "string"
-					}
-				],
-				"name": "linearSearch",
-				"outputs": [
-					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "completed",
 						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
 					}
 				],
-				"stateMutability": "view",
+				"name": "setCompleted",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -62,7 +63,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Lecture Note/week05/linearSearch.sol": "Ex5_7"
+			"ballot/ballot-contract/contracts/Migrations.sol": "Migrations"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -76,12 +77,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Lecture Note/week05/linearSearch.sol": {
-			"keccak256": "0xc57abca81668226cb2d2cd955d1fafb38167754761c79e90b71222b9bb438523",
-			"license": "MIT",
+		"ballot/ballot-contract/contracts/Migrations.sol": {
+			"keccak256": "0xdc6452d2bc627aed5054c2d2a4291f51962aa996a4ddf0d25198e784e87e4191",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://465397b06bcd6187c91fe3a878fb260e57548fe41e157408ded6125a38e8e011",
-				"dweb:/ipfs/QmWRjEq3Qif1XtjYkaX13GFPQMGD4hjZndFD5Ec63X1Bow"
+				"bzz-raw://120763846081b5b0cac12efda2183730af2051c982c9a62d505c3e98ad081641",
+				"dweb:/ipfs/QmUgEbVXq4s28MWqZrkmWVRVQo26vqmgWxBiu6nXHSQgAK"
 			]
 		}
 	},
