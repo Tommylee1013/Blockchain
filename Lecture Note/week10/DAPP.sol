@@ -18,6 +18,15 @@ contract Ballot {
 
     Proposal[] public proposals;
 
+    enum Phase {
+        Init, 
+        Regs, 
+        Vote, 
+        Done
+        }
+
+    Phase public currentPhase = Phase.Init;
+
     constructor (uint8 numProposals) {
         chairperson = msg.sender;
         for (uint8 idx = 0; idx < numProposals; idx ++){
@@ -35,9 +44,30 @@ contract Ballot {
         _;
     }
 
+    modifier validPhase(Phase reqPhase) {
+        require(currentPhase == reqPhase, "Error : It must be the right Phase");
+        _;
+    }
+
+    function advancePhase()
+        public 
+        onlyChair() {
+            if (currentPhase == Phase.Init){
+                currentPhase = Phase.Regs;
+            } else if (currentPhase == Phase.Regs) {
+                currentPhase = Phase.Vote;
+            } else if (currentPhase == Phase.Vote) {
+                currentPhase = Phase.Done;
+            } else {
+                currentPhase = Phase.Init;
+            }
+    }
+
     function registor(address _voter) 
         public 
+        validPhase(Phase.Regs)
         onlyChair() { 
+            // require(currentPhase == Phase.Regs, "Error : It must be the Regs Phase");
             if (_voter == chairperson) {
                 voters[_voter].weight = 2;
             } else {
@@ -49,7 +79,10 @@ contract Ballot {
     
     function vote(uint8 _number)
         public 
+        validPhase(Phase.Vote)
         validVoter() {
+            //require(currentPhase == Phase.Vote, "Error : It must be the Vote Phase");
+
             require(voters[msg.sender].voted == false, "Error : You already have been voted");
             require(_number < proposals.length, "Error : invalid number");
 
@@ -62,7 +95,10 @@ contract Ballot {
     function reqWinner() 
         public 
         view 
+        validPhase(Phase.Done)
         returns(uint) {
+            // require(currentPhase == Phase.Done, "Error : It must be the Done Phase");
+            
             uint maxIdx = 0;
             uint maxValue = proposals[0].voteCount;
 

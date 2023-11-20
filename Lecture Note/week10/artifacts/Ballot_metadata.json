@@ -17,6 +17,26 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [],
+				"name": "advancePhase",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "currentPhase",
+				"outputs": [
+					{
+						"internalType": "enum Ballot.Phase",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -132,11 +152,11 @@
 	},
 	"sources": {
 		"Lecture Note/week10/DAPP.sol": {
-			"keccak256": "0x47ec3a4b1530f37319de46bb4fa276092baca271748a43ca732e169f3a235111",
+			"keccak256": "0x72676a39a7bcacdc998338b977eb91be0b9b4c75d03238b50757b7065cd75dc9",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://2fab66723afab0151ca9e706b8beb8a4755b1c6f4bbae8f05df6717e87f08818",
-				"dweb:/ipfs/Qmd9KnjQM1Y31q3jVRyQXUyp386mC7GRk6fHkxMuaxDYER"
+				"bzz-raw://b5ff9b05984b73f844779f334229968407fdd412a24da7214a05c94b17f73999",
+				"dweb:/ipfs/QmUzB63Q38fSCjn5wAxYmgxrYrz77TRLxKDtersf4k17GR"
 			]
 		}
 	},
