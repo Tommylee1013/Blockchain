@@ -11,6 +11,32 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "player",
+						"type": "address"
+					}
+				],
+				"name": "PlayerEntered",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "winner",
+						"type": "address"
+					}
+				],
+				"name": "Winner",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "enter",
 				"outputs": [],
@@ -32,6 +58,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "lottoStatus",
+				"outputs": [
+					{
+						"internalType": "enum LotteryGame.Status",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "manager",
 				"outputs": [
 					{
@@ -45,9 +84,16 @@
 			},
 			{
 				"inputs": [],
+				"name": "openGame",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "pickWinner",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -98,11 +144,11 @@
 	},
 	"sources": {
 		"Lecture Note/week11/LotteryGame.sol": {
-			"keccak256": "0x442e09acd960b956209d33562f2b623a9a0d12f151294e77dca54274db420ba9",
+			"keccak256": "0x5265d6fa2be34a1cb7f81b8c22a49da764c8f369ce64fe32046394666e48bbd7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://db257c3c857ec821786ba159220d27daae934b2d659c6d00fa42d8058aed5e16",
-				"dweb:/ipfs/QmdYeXez8MQq2fbH8GGVDQioKmawNGLjrUkyFffugmGg9o"
+				"bzz-raw://a22f5155e465b57b3904c2066eda2c454defd32bdcb0b17fca2331cd6145908a",
+				"dweb:/ipfs/QmS4icxFLQredN9LFZHc3DSZA8uF88JzjL7mApvmDBQwu6"
 			]
 		}
 	},

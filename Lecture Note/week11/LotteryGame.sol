@@ -5,69 +5,87 @@ pragma solidity ^0.8.0;
 contract LotteryGame {
     address public manager;
     address[] public players;
+
+    enum Status {
+        open,
+        close
+    }
+
+    Status public lottoStatus;
+
+    event PlayerEntered(address player);
+    event Winner(address winner);
+
     bool check = true;
 
-    constructor () {
-        manager = payable(msg.sender);
-    }
-
     modifier restricted() {
-        require(manager == msg.sender, "Error : You are not Manager");
+        require(msg.sender == manager, "Error : Only the manager can call this function");
         _;
     }
 
-    modifier searchEnter() {
-        for (uint idx = 0; idx < players.length; ++idx) {
-            if (players[idx] == msg.sender) {
-                check = false;
-            }
-        }
+    modifier isManager() {
+        require(msg.sender != manager, "Error : Manager can not bet the lottery game");
         _;
     }
 
-    function checkDup()
+    constructor() {
+        manager = msg.sender;
+    }
+
+    function getPlayers() 
+        public 
+        view 
+        returns (address[] memory) {
+            return players;
+    }
+
+    function checkDup() 
         private 
         view 
-        returns(bool) {
-            for (uint idx = 0; idx < players.length; idx++) {
-            if (players[idx] == msg.sender) {
-                return true;
+        returns (bool) {
+            for (uint i = 0; i < players.length; i++) {
+                if (players[i] == msg.sender) {
+                    return true;
+                }
             }
             return false;
-            }
-        }
+    }
 
-    function enter()
+    function enter() 
         public 
-        payable {
-            require(msg.value == 1 ether, "Error : Only 1 Ether is allowed");
-            bool dup = checkDup();
-            require(dup == false);
-            players.push(msg.sender);
-        }
-    
-    function getPlayers()
-        public 
-        view 
-        returns(address[] memory) {
-            return players;
+        payable 
+        isManager() {
+            require(lottoStatus == Status.open, "Error : Gane is not open");
+            require(msg.value == 1 ether, "Only 1 Ether is Allowed");
+            if (checkDup() == false) {
+                players.push(msg.sender);
+                emit PlayerEntered(msg.sender);
+            }
         }
 
     function random() 
         private 
         view 
-        returns(uint) {
-            bytes32 hash = keccak256(abi.encodePacked(block.number, block.timestamp, players.length));
-            return uint(hash);
-        }
+        returns (uint) {
+            uint hash = uint(keccak256(abi.encodePacked(block.number, block.timestamp, players.length)));
+            return hash;
+    }
 
-    function pickWinner()
-        public  
-        payable
+    function pickWinner() 
+        public 
         restricted() {
-            address winner = players[random() % players.length];
+            uint index = random() % players.length;
+            address winner = players[index];
             delete players;
-            payable(winner).transfer(address(this).balance);
+            payable(winner).transfer(address(this).balance); 
+            lottoStatus = Status.close;
+            emit Winner(winner);
+    }
+
+    function openGame()
+        public 
+        restricted() {
+            lottoStatus = Status.open;
         }
 
 }
