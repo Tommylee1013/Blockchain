@@ -38,6 +38,13 @@
 			},
 			{
 				"inputs": [],
+				"name": "closeGame",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "enter",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -144,11 +151,11 @@
 	},
 	"sources": {
 		"Lecture Note/week11/LotteryGame.sol": {
-			"keccak256": "0x5265d6fa2be34a1cb7f81b8c22a49da764c8f369ce64fe32046394666e48bbd7",
+			"keccak256": "0x21c41ece76203227287e952ea72778b0c853fb362c8697d3fe38d82ce3d5f49a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a22f5155e465b57b3904c2066eda2c454defd32bdcb0b17fca2331cd6145908a",
-				"dweb:/ipfs/QmS4icxFLQredN9LFZHc3DSZA8uF88JzjL7mApvmDBQwu6"
+				"bzz-raw://9eeb85414991c5b53f66886f7842ad20fdf50f983d10963391bd9816b927d093",
+				"dweb:/ipfs/QmUQqwYjJALbjRBEp84ghJLfjtxxKej62ZPVpFsW3rpCsi"
 			]
 		}
 	},

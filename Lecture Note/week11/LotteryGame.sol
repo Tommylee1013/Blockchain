@@ -74,11 +74,11 @@ contract LotteryGame {
     function pickWinner() 
         public 
         restricted() {
+            require(lottoStatus == Status.close, "Error : The Game is not ended");
             uint index = random() % players.length;
             address winner = players[index];
             delete players;
             payable(winner).transfer(address(this).balance); 
-            lottoStatus = Status.close;
             emit Winner(winner);
     }
 
@@ -88,4 +88,9 @@ contract LotteryGame {
             lottoStatus = Status.open;
         }
 
+    function closeGame()
+        public 
+        restricted() {
+            lottoStatus = Status.close;
+        }
 }
