@@ -2,52 +2,113 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract BlindAuction {
+
     struct Bid {
         bytes32 blindedBid;
         uint deposit;
     }
 
-    // Init - 0; Bidding - 1; Reveal - 2; Done - 3
-    enum Phase {Init, Bidding, Reveal, Done}
+    enum Phase {
+        Init, 
+        Bidding, 
+        Reveal, 
+        Done
+    }
 
-    // Owner
     address payable public beneficiary;
-
-    // Keep track of the highest bid,bidder
     address public highestBidder;
-    uint public highestBid = 0;
+    uint public highestBid;
 
-    // Only one bid allowed per address
     mapping(address => Bid) public bids;
     mapping(address => uint) pendingReturns;
 
     Phase public currentPhase = Phase.Init;
 
-    // Events
-    event AuctionEnded(address winner, uint highestBid);
+    event AuctionEnded(address winner, 
+                       uint highestBid);
     event BiddingStarted();
     event RevealStarted();
     event AuctionInit();
 
-    // Modifiers
+    modifier onlyBeneficiary() {
+        require(msg.sender == beneficiary, "Only beneficiary can call this");
+        _;
+    }
+
+    modifier inPhase(Phase _phase) {
+        require(currentPhase == _phase, "Invalid phase");
+        _;
+    }
 
     constructor() {
+        beneficiary = payable(msg.sender);
     }
 
-    function advancePhase() public {
+    function advancePhase() 
+        public 
+        onlyBeneficiary() {
+        if (currentPhase == Phase.Done) {
+            revert("Auction already ended");
+        }
+        if (currentPhase == Phase.Init) {
+            currentPhase = Phase.Bidding;
+            emit BiddingStarted();
+        } else if (currentPhase == Phase.Bidding) {
+            currentPhase = Phase.Reveal;
+            emit RevealStarted();
+        } else if (currentPhase == Phase.Reveal) {
+            currentPhase = Phase.Done;
+            emit AuctionEnded(highestBidder, highestBid);
+        }
     }
 
-    function bid(bytes32 blindBid) public {
+    function bid(bytes32 _blindedBid) 
+        public 
+        payable 
+        inPhase(Phase.Bidding) {
+        bids[msg.sender] = Bid(
+            {
+            blindedBid : _blindedBid,
+            deposit : msg.value
+            }
+        );
     }
 
-    function reveal(uint value, bytes32 secret) public {
+    function reveal(uint _value, 
+                    bytes32 _password) 
+        public 
+        inPhase(Phase.Reveal) {
+        uint refund;
+        Bid storage bidToCheck = bids[msg.sender];
+
+        if (bidToCheck.blindedBid == keccak256(abi.encodePacked(_value, _password)) && bidToCheck.deposit >= _value) {
+            if (_value > highestBid) {
+                highestBid = _value;
+                highestBidder = msg.sender;
+            }
+            refund = bidToCheck.deposit - _value;
+        } else {
+            refund = bidToCheck.deposit;
+        }
+
+        bidToCheck.blindedBid = bytes32(0);
+        pendingReturns[msg.sender] += refund;
     }
 
-    // Withdraw a non-winning bid
-    function withdraw() public {
+    function withdraw() 
+        public {
+        uint amount = pendingReturns[msg.sender];
+        if (amount > 0) {
+            pendingReturns[msg.sender] = 0;
+
+            payable(msg.sender).transfer(amount);
+        }
     }
 
-    // Send the highest bid to the beneficiary and end the auction
-    function auctionEnd() public {
+    function auctionEnd() 
+        public 
+        onlyBeneficiary() 
+        inPhase(Phase.Done) {
+        beneficiary.transfer(highestBid);
     }
 }
