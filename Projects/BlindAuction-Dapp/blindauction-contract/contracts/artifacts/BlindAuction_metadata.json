@@ -113,6 +113,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "checkRefund",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "currentPhase",
 				"outputs": [
 					{
@@ -159,7 +172,7 @@
 					},
 					{
 						"internalType": "bytes32",
-						"name": "_password",
+						"name": "_secret",
 						"type": "bytes32"
 					}
 				],
@@ -204,11 +217,11 @@
 	},
 	"sources": {
 		"Projects/BlindAuction-Dapp/blindauction-contract/contracts/BlindAuction.sol": {
-			"keccak256": "0xb4f1c2ae2728f50ed99e83f20bf4cd7bf39d3a2620315c2912ba818341726b98",
+			"keccak256": "0xb8a96d84670f096eb47a9ff29599a54898122b89fd09478b387b15c78c80da74",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://4432c66e8158a2ff92e249f22e31880636360fb69574be565fc3ed1588fa4656",
-				"dweb:/ipfs/QmWherJRHMZwdeQYPmwxXEUJr8ejby5TYLPh6oHB91zYBC"
+				"bzz-raw://04e78597127728a46dfc14212075c2e6ddc935c155bd4f7fe8f0c051164231fd",
+				"dweb:/ipfs/QmeNiRiErudazkR3aA6ZoAE3o12mWnpywPjLpNQD8mCzoK"
 			]
 		}
 	},
