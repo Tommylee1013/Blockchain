@@ -164,6 +164,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "khashContract",
+				"outputs": [
+					{
+						"internalType": "contract Khash",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -172,7 +185,7 @@
 					},
 					{
 						"internalType": "bytes32",
-						"name": "_secret",
+						"name": "_password",
 						"type": "bytes32"
 					}
 				],
@@ -217,11 +230,11 @@
 	},
 	"sources": {
 		"Projects/BlindAuction-Dapp/blindauction-contract/contracts/BlindAuction.sol": {
-			"keccak256": "0xb8a96d84670f096eb47a9ff29599a54898122b89fd09478b387b15c78c80da74",
+			"keccak256": "0x222487b1c2791ee1c4af15accde942d22ce729ceb3c56de1b06f857783ba9e09",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://04e78597127728a46dfc14212075c2e6ddc935c155bd4f7fe8f0c051164231fd",
-				"dweb:/ipfs/QmeNiRiErudazkR3aA6ZoAE3o12mWnpywPjLpNQD8mCzoK"
+				"bzz-raw://2836ed01d0866bfdb9e7ca5a190588a2f6b35fdc6e61ed9b8db136f9183f4a13",
+				"dweb:/ipfs/QmdxQhtkAMVawAAv7JvvhE6zvbAcNXvLGvRJST9kGtxhj7"
 			]
 		}
 	},

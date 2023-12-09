@@ -1,7 +1,18 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 
+contract Khash {
+    function hashMe(uint value, bytes32 password) 
+        public 
+        pure 
+        returns (bytes32) {
+            return keccak256(abi.encodePacked(value, password));
+    }
+}
+
 contract BlindAuction {
+    Khash public khashContract;
+
     struct Bid {
         bytes32 blindedBid;
         uint deposit;
@@ -23,7 +34,8 @@ contract BlindAuction {
     address public highestBidder;
     uint public highestBid;
 
-    event AuctionEnded(address winner, uint highestBid);
+    event AuctionEnded(address winner, 
+                       uint highestBid);
     event BiddingStarted();
     event RevealStarted();
     event AuctionInit();
@@ -40,62 +52,70 @@ contract BlindAuction {
 
     constructor() {
         beneficiary = payable(msg.sender);
+        khashContract = new Khash(); // Khash 인스턴스 생성
     }
 
-    function advancePhase() public onlyBeneficiary {
-        if (currentPhase == Phase.Done) {
-            revert("Auction already ended");
+    function advancePhase() 
+        public 
+        onlyBeneficiary() {
+            if (currentPhase == Phase.Done) {
+                revert("Auction already ended");
+            }
+            if (currentPhase == Phase.Init) {
+                currentPhase = Phase.Bidding;
+                emit BiddingStarted();
+            } else if (currentPhase == Phase.Bidding) {
+                currentPhase = Phase.Reveal;
+                emit RevealStarted();
+            } else if (currentPhase == Phase.Reveal) {
+                currentPhase = Phase.Done;
+                emit AuctionEnded(highestBidder, highestBid);
+            }
         }
-        if (currentPhase == Phase.Init) {
-            currentPhase = Phase.Bidding;
-            emit BiddingStarted();
-        } else if (currentPhase == Phase.Bidding) {
-            currentPhase = Phase.Reveal;
-            emit RevealStarted();
-        } else if (currentPhase == Phase.Reveal) {
-            currentPhase = Phase.Done;
-            emit AuctionEnded(highestBidder, highestBid);
-        }
+
+    function bid(bytes32 _blindedBid) 
+        public 
+        payable 
+        inPhase(Phase.Bidding) {
+            bids[msg.sender] = Bid({
+                blindedBid: _blindedBid,
+                deposit: msg.value
+            });
     }
 
-    function bid(bytes32 _blindedBid) public payable inPhase(Phase.Bidding) {
-        bids[msg.sender] = Bid({
-            blindedBid: _blindedBid,
-            deposit: msg.value
-        });
-    }
+    function reveal(uint _value, bytes32 _password) 
+        public 
+        inPhase(Phase.Reveal) {
+            Bid storage bidToCheck = bids[msg.sender];
+            
+            bytes32 hashedBid = khashContract.hashMe(_value, _password);
 
-    function reveal(uint _value, bytes32 _secret) public inPhase(Phase.Reveal) {
-        Bid storage bidToCheck = bids[msg.sender];
-        if (bidToCheck.blindedBid == keccak256(abi.encodePacked(_value, _secret))) {
-            uint refund = bidToCheck.deposit;
-            if (_value * 1 ether > highestBid) {
-                if (highestBidder != address(0)) {
-                    // 이전 최고 입찰자에게 입찰 금액 반환
-                    pendingReturns[highestBidder] += highestBid;
+            if (bidToCheck.blindedBid == hashedBid) {
+                uint refund = bidToCheck.deposit;
+                if (_value * 1 ether > highestBid) {
+                    if (highestBidder != address(0)) {
+                        pendingReturns[highestBidder] += highestBid;
+                    }
+                    highestBidder = msg.sender;
+                    highestBid = _value * 1 ether;
+                    refund -= _value * 1 ether;
                 }
-                // 새로운 최고 입찰자 설정
-                highestBid = _value * 1 ether;
-                highestBidder = msg.sender;
-                refund -= _value * 1 ether; // 입찰 금액을 뺀 나머지 반환
+                if (refund > 0) {
+                    pendingReturns[msg.sender] = refund;
+                }
+            } else {
+                pendingReturns[msg.sender] = bidToCheck.deposit;
             }
-            // 남은 금액을 pendingReturns에 추가
-            if (refund > 0) {
-                pendingReturns[msg.sender] += refund;
-            }
-        } else {
-            // 해시가 일치하지 않는 경우, 전체 예치금을 반환
-            pendingReturns[msg.sender] += bidToCheck.deposit;
-        }
-        bidToCheck.blindedBid = bytes32(0);
+            bidToCheck.blindedBid = bytes32(0);
     }
-
-    function withdraw() public {
-        uint amount = pendingReturns[msg.sender];
-        if (amount > 0) {
-            pendingReturns[msg.sender] = 0;
-            payable(msg.sender).transfer(amount);
-        }
+    
+    function withdraw() 
+        public {
+            uint amount = pendingReturns[msg.sender];
+            if (amount > 0) {
+                pendingReturns[msg.sender] = 0;
+                payable(msg.sender).transfer(amount);
+            }
     }
 
     function checkRefund()
@@ -105,10 +125,13 @@ contract BlindAuction {
             return pendingReturns[msg.sender];
         }
 
-    function auctionEnd() public onlyBeneficiary inPhase(Phase.Done) {
-        if (highestBidder != address(0)) {
-            beneficiary.transfer(highestBid);
+    function auctionEnd() 
+        public 
+        onlyBeneficiary() 
+        inPhase(Phase.Done) {
+            if (highestBidder != address(0)) {
+                beneficiary.transfer(highestBid);
+            }
+            emit AuctionEnded(highestBidder, highestBid);
         }
-        emit AuctionEnded(highestBidder, highestBid);
-    }
 }
