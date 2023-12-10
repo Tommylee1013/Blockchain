@@ -34,11 +34,11 @@ contract BlindAuction {
     address public highestBidder;
     uint public highestBid;
 
-    event AuctionEnded(address winner, 
-                       uint highestBid);
+    event AuctionEnded(address winner, uint highestBid);
     event BiddingStarted();
     event RevealStarted();
     event AuctionInit();
+    event BidCancelled(address bidder, uint refundAmount);
 
     modifier onlyBeneficiary() {
         require(msg.sender == beneficiary, "Only beneficiary can call this");
@@ -81,6 +81,21 @@ contract BlindAuction {
                 blindedBid: _blindedBid,
                 deposit: msg.value
             });
+    }
+
+    function cancelBid() 
+        public 
+        inPhase(Phase.Bidding) {
+            Bid storage myBid = bids[msg.sender];
+            require(myBid.deposit > 0, "No bid to cancel");
+
+            uint refundAmount = myBid.deposit;
+            myBid.deposit = 0;
+            myBid.blindedBid = bytes32(0);
+
+            pendingReturns[msg.sender] = refundAmount;
+
+            emit BidCancelled(msg.sender, refundAmount);
     }
 
     function reveal(uint _value, bytes32 _password) 

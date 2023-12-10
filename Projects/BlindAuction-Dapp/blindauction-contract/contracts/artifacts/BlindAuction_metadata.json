@@ -37,6 +37,25 @@
 			},
 			{
 				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "bidder",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "refundAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "BidCancelled",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
 				"inputs": [],
 				"name": "BiddingStarted",
 				"type": "event"
@@ -109,6 +128,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "cancelBid",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -230,11 +256,11 @@
 	},
 	"sources": {
 		"Projects/BlindAuction-Dapp/blindauction-contract/contracts/BlindAuction.sol": {
-			"keccak256": "0x222487b1c2791ee1c4af15accde942d22ce729ceb3c56de1b06f857783ba9e09",
+			"keccak256": "0x1f445ddf0fe48cef0168fbc85b1ae10bd99fa7c3abba498123c137932e335973",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://2836ed01d0866bfdb9e7ca5a190588a2f6b35fdc6e61ed9b8db136f9183f4a13",
-				"dweb:/ipfs/QmdxQhtkAMVawAAv7JvvhE6zvbAcNXvLGvRJST9kGtxhj7"
+				"bzz-raw://dbf06444505edd752980c6cdf5201dabed0b7b1115dd9af742edfd63d3a0c3af",
+				"dweb:/ipfs/QmaxzRjrVceHFNx4pLz9DTiG5dkbAaiQUhTdfH5vuShLr8"
 			]
 		}
 	},
