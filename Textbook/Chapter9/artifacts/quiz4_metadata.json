@@ -8,6 +8,11 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					},
+					{
 						"internalType": "uint256",
 						"name": "_num1",
 						"type": "uint256"
@@ -18,7 +23,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "mul",
+				"name": "CallMath",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -50,7 +55,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Textbook/Chapter9/quiz4.sol": "Math"
+			"Textbook/Chapter9/quiz4.sol": "quiz4"
 		},
 		"evmVersion": "paris",
 		"libraries": {},

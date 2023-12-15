@@ -1,5 +1,5 @@
 {
-	"id": "ca9c73566a9d56f5458bf7e48cfa743f",
+	"id": "c5e5f6358a3101e49e66cd8415cf290d",
 	"_format": "hh-sol-build-info-1",
 	"solcVersion": "0.8.18",
 	"solcLongVersion": "0.8.18+commit.87f61d96",
@@ -34,7 +34,8 @@
 						"evm.assembly"
 					]
 				}
-			}
+			},
+			"remappings": []
 		}
 	},
 	"output": {

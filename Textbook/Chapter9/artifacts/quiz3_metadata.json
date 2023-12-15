@@ -8,6 +8,11 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					},
+					{
 						"internalType": "uint256",
 						"name": "_num1",
 						"type": "uint256"
@@ -18,22 +23,15 @@
 						"type": "uint256"
 					}
 				],
-				"name": "mul",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "total",
+				"name": "CallMath",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "bytes",
 						"name": "",
-						"type": "uint256"
+						"type": "bytes"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -50,7 +48,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Textbook/Chapter9/quiz4.sol": "Math"
+			"Textbook/Chapter9/quiz3.sol": "quiz3"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -64,12 +62,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Textbook/Chapter9/quiz4.sol": {
-			"keccak256": "0xf57820a6daa770829a0dc5c7b7d012161590501ea3f38f65883883841eacb9dc",
+		"Textbook/Chapter9/quiz3.sol": {
+			"keccak256": "0x4f78c3e08df030ea1ea0aae0d42fb1c61bf73eb3270e346d0598fd5fba0b86b9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9b639953f1062755eb34b526ae9b76ce42a813923025896c47c7d3cb68240d0e",
-				"dweb:/ipfs/QmaddsMdFosjoHDd15aSFMsHwZx73Gp5LBydfVZxcxLhLi"
+				"bzz-raw://4a84f21330a4dceac69f6bb902d0c615f95272a352ea9f88d280e8a1d521fcec",
+				"dweb:/ipfs/QmQhP1KHYj6XPdqNV2cmFJkHv9Ns4fvfhmvbHC9izp1wAo"
 			]
 		}
 	},

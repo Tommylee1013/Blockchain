@@ -6,26 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_num1",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_num2",
-						"type": "uint256"
-					}
-				],
-				"name": "mul",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
-				"name": "total",
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -35,6 +17,17 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sendEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -50,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Textbook/Chapter9/quiz4.sol": "Math"
+			"Textbook/Chapter9/quiz2.sol": "quiz2"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -64,12 +57,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Textbook/Chapter9/quiz4.sol": {
-			"keccak256": "0xf57820a6daa770829a0dc5c7b7d012161590501ea3f38f65883883841eacb9dc",
+		"Textbook/Chapter9/quiz2.sol": {
+			"keccak256": "0x3b8edbbb5a5adaff11a022eb647f381ca9bfa85b77542f799bc7e60b9f5e890d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9b639953f1062755eb34b526ae9b76ce42a813923025896c47c7d3cb68240d0e",
-				"dweb:/ipfs/QmaddsMdFosjoHDd15aSFMsHwZx73Gp5LBydfVZxcxLhLi"
+				"bzz-raw://ca1ea88e2f7d01f87874d5390bd524063f6513a026f9f0585f19d3957b32c7fc",
+				"dweb:/ipfs/QmS5yhpD2iv7JTyKhgvtXbc72133DCSCRLsip3qMZYaieL"
 			]
 		}
 	},

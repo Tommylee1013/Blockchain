@@ -13,27 +13,8 @@
 						"type": "address"
 					}
 				],
-				"name": "getBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getMsgValue",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
+				"name": "sendEther",
+				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
 			}
@@ -51,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Textbook/Chapter9/Ex9_1.sol": "Ex9_1"
+			"Textbook/Chapter9/quiz1.sol": "quiz1"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -65,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Textbook/Chapter9/Ex9_1.sol": {
-			"keccak256": "0xdbfffafd8fd0b87926ea6b5ad265e76d96c8b031bb3a855bbfddbc0f4939d1f3",
+		"Textbook/Chapter9/quiz1.sol": {
+			"keccak256": "0x99a219bf5d28a8d47495e9d48c4afaa90b0e317d943b31587720850138cac138",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c462df199b616ec6a806dde2df9cf59c6b7e832156bc929ed1a9c98ed11e2c68",
-				"dweb:/ipfs/QmPb6RixKFE27GfsGXH9VTY2dSMvJnpMxrYQ8NGY6BziQP"
+				"bzz-raw://f464a4a4342870c1dae9b203878cc2477a0f044025671879661ef3c8f3cc4438",
+				"dweb:/ipfs/QmT6GRha8iaPVBumQEGXoNKoH2GKbGoGzkgTV2YodME4LZ"
 			]
 		}
 	},

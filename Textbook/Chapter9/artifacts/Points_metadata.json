@@ -9,16 +9,11 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_num1",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_num2",
+						"name": "_point",
 						"type": "uint256"
 					}
 				],
-				"name": "mul",
+				"name": "addPoints",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -50,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Textbook/Chapter9/quiz4.sol": "Math"
+			"Textbook/Chapter9/Ex9_12.sol": "Points"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -64,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Textbook/Chapter9/quiz4.sol": {
-			"keccak256": "0xf57820a6daa770829a0dc5c7b7d012161590501ea3f38f65883883841eacb9dc",
+		"Textbook/Chapter9/Ex9_12.sol": {
+			"keccak256": "0xc3d07150ea898b9834a8567cb32966cc5cf84ef9b788fd51c94ee65b2615cbb3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9b639953f1062755eb34b526ae9b76ce42a813923025896c47c7d3cb68240d0e",
-				"dweb:/ipfs/QmaddsMdFosjoHDd15aSFMsHwZx73Gp5LBydfVZxcxLhLi"
+				"bzz-raw://804a6f8e6bda2010aac06b2bd794c8fe75ca14379d28edc9f19d2e3be9059f96",
+				"dweb:/ipfs/QmRxqYn1rZsa9HDSdzmnFA7ayehGcNVBW1yQ1faxznJgG8"
 			]
 		}
 	},

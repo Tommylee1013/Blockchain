@@ -6,26 +6,31 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_num1",
-						"type": "uint256"
+						"indexed": false,
+						"internalType": "string",
+						"name": "info",
+						"type": "string"
 					},
 					{
-						"internalType": "uint256",
-						"name": "_num2",
-						"type": "uint256"
+						"indexed": false,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
 					}
 				],
-				"name": "mul",
-				"outputs": [],
+				"name": "From",
+				"type": "event"
+			},
+			{
 				"stateMutability": "nonpayable",
-				"type": "function"
+				"type": "fallback"
 			},
 			{
 				"inputs": [],
-				"name": "total",
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -34,6 +39,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "outPut",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -50,7 +62,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Textbook/Chapter9/quiz4.sol": "Math"
+			"Textbook/Chapter9/Ex9_10.sol": "Receiver"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -64,12 +76,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Textbook/Chapter9/quiz4.sol": {
-			"keccak256": "0xf57820a6daa770829a0dc5c7b7d012161590501ea3f38f65883883841eacb9dc",
+		"Textbook/Chapter9/Ex9_10.sol": {
+			"keccak256": "0x62300668d558e480d3a6c2903219386c679e83c8c7795a63c51d83d9f3fe6c51",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9b639953f1062755eb34b526ae9b76ce42a813923025896c47c7d3cb68240d0e",
-				"dweb:/ipfs/QmaddsMdFosjoHDd15aSFMsHwZx73Gp5LBydfVZxcxLhLi"
+				"bzz-raw://718e81de8c87bf197007e07f5cdf96d49fe32afcd0530d36b60409b37b4b63b0",
+				"dweb:/ipfs/QmP1n4d2WAP9rjH9LU3skMu99vxZuC4nQyR3tkUrPMcNrU"
 			]
 		}
 	},
